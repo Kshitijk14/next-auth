@@ -12,8 +12,10 @@ export default async function Page() {
 
     return (
         <>
+            <h3>Hi {session?.user?.name}, how are you doing today?</h3>
+            <br />
             {session?.user?.image && <img src={session?.user?.image} alt="" />}
-            <h3>This is your timeline: {session?.user?.email}</h3>
+            {/* <h3>This is your email: {session?.user?.email}</h3> */}
         </>
     );
 }
